@@ -1538,6 +1538,7 @@ int GUIAction::decrypt(std::string arg __unused)
 			op_status = 1;
 		else {
 			DataManager::SetValue(TW_IS_ENCRYPTED, 0);
+			DataManager::SetBackupFolder();
 
 			int has_datamedia;
 
